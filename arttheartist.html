@@ -4,21 +4,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ASAP Program</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <header>
-        <h1 style="color:white; text-align:right; font-size:50px; font-weight:bolder; font:sans-serif">ASAP Program</h1>
+        <h1 style="color:whitesmoke; text-align:right; font-size:50px; font-weight:bolder">ASAP Program</h1>
     </header>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+       
         body {
-            background-color: #3C4858;
-            font-family: sans-serif;
+            background-color: #1c1c1c;
+            font-family: 'Abel', sans-serif;
+            box-sizing: border-box;
         }
-
-        .myContent{
-            margin: 0 auto;
-            width: 50%;
-        }
-
+  
         #mySidenav a {
             position: absolute;
             left: -10px;
@@ -27,53 +27,63 @@
             width: 100px;
             text-decoration: none;
             font-size: 20px;
-            color: white;
+            color: whitesmoke;
             border-radius: 0 5px 5px 0;
             text-align: center;
             margin-top: 40px;
+            scroll-behavior: auto;
+            
         }
 
         #mySidenav a:hover {
             left: 0;
         }
 
-        #whyArt {
+        #aboutMe {
             top: 20px;
-            background-color: #f8b700;
+            background-color:#256697;
+        }
+
+        #whyArt {
+            top: 80px;
+            background-color:  #8a0616;
+         
         }
 
         #learnArt {
-            top: 80px;
-            background-color: #ff5216;
+            top: 140px;
+            background-color:#f8b700 
         }
 
         #teachArt {
-            top: 140px;
-            background-color: #8a0616;
+            top: 200px;
+            background-color: #6da331;
+         
         }
 
         #packages {
-            top: 200px;
-            background-color: #6da331;
+            top: 260px;
+            background-color: #ff5216;
         }
 
         #testimonials {
-            top: 260px;
-            background-color: #256697;
+            top: 320px;
+            background-color: #1FB6FF;
         }
 
         .oddsection {
-            background-color: #3C4858;
-            color: white;
+            background-color: #1c1c1c;
+            color: whitesmoke;
             height: 500px;
             padding: 20px;
             margin-left: 200px;
             overflow: auto;
+            
         }
 
         .evensection {
-            background-color: white;
-            color: #3C4858;
+            background-color: #1c1c1c;
+            color:whitesmoke;
             height: 500px;
             padding: 20px;
             margin-left: 200px;
@@ -100,7 +110,7 @@
             vertical-align: bottom;
             overflow: auto;
             border: 1px solid white;
-            color: white;
+            color: whitesmoke;
             text-align: center;
             margin: 10px;
             font-family: Verdana;
@@ -111,7 +121,7 @@
         }
 
         .button1 {
-            color: white;
+            color: whitesmoke;
             font-family: Verdana;
             background-color: #8a0616;
             width: auto;
@@ -122,7 +132,7 @@
         }
 
         .button2 {
-            color: white;
+            color: whitesmoke;
             font-family: Verdana;
             background-color: #6da331;
             width: auto;
@@ -132,7 +142,7 @@
         }
 
         .button3 {
-            color: white;
+            color: whitesmoke;
             font-family: Verdana;
             background-color: #256697;
             width: auto;
@@ -153,6 +163,8 @@
 
         .myContent {
             padding: 16px;
+            width: 50%;
+            margin: 0 auto;
         }
 
         /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -166,7 +178,7 @@
         /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
         .sticky+.myContent {
-            padding-top: 60px;
+            padding-top: 50px;
         }
 
         /* Slideshow container */
@@ -187,7 +199,7 @@
             width: auto;
             padding: 16px;
             margin-top: -22px;
-            color: white;
+            color: whitesmoke;
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
@@ -223,7 +235,7 @@
 
         .active,
         .dot:hover {
-            background-color: #717171;
+            background-color: #ca6;
         }
 
         /* Fading animation */
@@ -259,28 +271,54 @@
             .prev,
             .next,
             .text {
-                font-size: 11px
+            font-size: 11px;
+            padding: 50%;
             }
-        }
+            box-sizing: border-box;
+        
 
         @media screen and (max-width: 600px) {
             div#mySidenav{
                 display: none;
+                padding: 30%;
+                box-sizing: border-box;
             }
             
-            /* .mySidenav {
-                padding-top: 10px;
-            }
-            .mySidenav a {
-                font-size: 10px;
-            }
             .evensection {
-                padding-left: 40px;
+                padding-left: 30px;
+                box-sizing: border-box;
             }
+
             .oddsection {
-                padding-left: 40px;
-            } */
+                padding-left: 30px;
+                box-sizing: border-box;
+            } 
+            
+        /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}    
+
+
+
+
         }
+    }
     </style>
 </head>
 
@@ -330,6 +368,7 @@
     </script>
 
     <div id="mySidenav">
+        <a href="#AboutMe" id="aboutMe">About Me</a>
         <a href="#Why" id="whyArt">Why Art</a>
         <a href="#Learn" id="learnArt">Learn Art</a> 
         <a href="#How" id="teachArt">Teach Art</a>
@@ -338,11 +377,19 @@
     </div>
 
     <div id="myContent" class="content">
+        <section class="oddsection" id="AboutMe">
+
+            <h3>About Me</h3>
+            <p>
+                <br>Lorem ipsum dolor sit amet, ad eam exerci persius accusamus, ipsum iudico iisque has no, id nam corrumpit sententiae. Ad sit illud labitur, scaevola maiestatis qui ei. Ex quidam facilisi pro, eu viris doming prompta vix, at delenit omittantur qui. Eos in iriure facilis forensibus. No autem populo iracundia vim, legendos praesent mel eu.</p>           </p>
+        
+            </section>
+
         <section class="oddsection" id="Why">
 
             <h3>Why is art important?</h3>
             <p>
-                <br>Why you may ask? fhdrelkspgfjkjsrewoicis roelfls;pogfermfskfksl</p>
+                <br>Why you may ask? </p>
 
         </section>
         <section class="evensection" id="How">
