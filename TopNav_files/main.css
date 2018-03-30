@@ -7,6 +7,11 @@
     float: right;
 }
 
+.nav-container.primary-wrapper {
+    display: none;
+}
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
@@ -28,7 +33,7 @@
 .active {
     background-color: #4CAF50;
     color: white;
-}
+} */
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
